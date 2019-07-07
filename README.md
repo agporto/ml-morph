@@ -29,6 +29,7 @@ The pipeline itself has four mains components, which should be applied in sequen
 3) Training and testing shape predictors `shape_trainer.py` `shape_tester.py`
 4) Predicting the landmark positions in a new set of images `prediction.py` 
 
+
 ### Vignette
 
 Here, we will go through the **_ml-morph_** pipeline using a tiny fly wing dataset (see `image-examples`) to illustrate the full-training process. This dataset contains `58` images of drosophilid wings, which have been annotated for `12` landmarks (see `landmark-examples`). We have provided landmark annotations in two file formats traditionally used by the morphometric community. While this dataset is too small to generate high performing detectors and predictors, it still allows us to demonstrate how this software can be used. 
@@ -61,6 +62,8 @@ When creating training and testing sets from previously annotated datasets, the 
     python3 preprocessing.py -i image-examples -t landmark-examples/tps-example.tps
 
 This command will generate the `train` and `test` folders, as well as the `train.xml` and `test.xml` downstream files.
+
+
 
 
 #### 2) Training and testing object detectors (detector_trainer.py)
@@ -123,6 +126,7 @@ If the user wants to test a model that was trained in the past, this can be done
 ```
     Testing accuracy: precision: 1, recall: 1, average precision: 1
 ```
+
 
 
 #### 3) Training and testing shape predictors (shape_trainer.py)
