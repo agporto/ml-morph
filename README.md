@@ -12,7 +12,7 @@ Porto & Voje (2019) A fast, accurate and general model for automated landmarking
 
 These modules can be installed using:
 
-	pip3 install -r requirements.txt
+	pip install -r requirements.txt
 
 ## Optional Dependencies
 - imglab
@@ -225,6 +225,13 @@ For simplicity, here we will just predict the landmark positions in the images i
 A single xml file is produced as an output (`output.xml` or user-defined name). The user can then visualize the predictions using `imglab`, if needed:
 
     ./imglab output.xml
+
+Alternatively, the landmark data can also be imported into python using functions within `utils.py`:
+
+```python
+from utils import *
+df = dlib_xml_to_pandas('output.xml')
+```
 
 As should be noted, the tiny size of the dataset prevents the model from attaining high performance. Still, for such small dataset, the performance is quite reasonable. 
 
