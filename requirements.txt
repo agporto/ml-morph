@@ -1,0 +1,4 @@
+pandas>=0.22.0
+numpy>=1.13.3
+opencv-python>=3.4.0.12
+dlib>=19.7.0
