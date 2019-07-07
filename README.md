@@ -12,7 +12,7 @@ Porto & Voje (2019) A fast, accurate and general model for automated landmarking
 
 These modules can be installed using:
 
-		pip3 install -r requirements.txt
+	pip3 install -r requirements.txt
 
 ## Optional Dependencies
 - imglab
