@@ -38,7 +38,7 @@ Here, we will go through the **_ml-morph_** pipeline using a tiny fly wing datas
 
 In the preprocessing step, **_ml-morph_** will split a user-defined image folder into `train` and `test` sets. When splitting the image files, **_ml-morph_** will convert all image files to `.jpg` and _(optionally)_ also generate the `train.xml` and `test.xml` downstream files from previously acquired annotations. The xml files generated during this step contain the landmark and bounding box annotations for each image in the `train` and `test` folders. Please see the following scenarios for usage details:
 
-##### Scenario 1 - No previous annotation 
+##### option 1 - No previous annotation 
 When creating a training and testing dataset from scratch, the preprocessing step will only serve to split the images into `train`and `test` sets (80%/20% split). This can be accomplished using:
 
     python3 preprocessing.py -i image-examples
@@ -55,7 +55,7 @@ See `./imglab -h` for other usage possibilities and the `imglab` manual for deta
 
 
 
-##### Scenario 2 - Previously annotated dataset
+##### option 2 - Previously annotated dataset
 When creating training and testing sets from previously annotated datasets, the preprocessing step will not only split the images into `train` and `test` sets but also generate the downstream input files (`train.xml` and `test.xml`). Using the  `.tps` annotation file as an example, simply type:
 
     python3 preprocessing.py -i image-examples -t landmark-examples/tps-example.tps
