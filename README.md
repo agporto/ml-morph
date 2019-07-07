@@ -17,7 +17,7 @@ These modules can be installed using:
 ## Optional Dependencies
 - imglab
 
-For those who want to visualize the xml files produced by the pipeline, we recommend installing the [`imglab`](https://github.com/davisking/dlib/tree/master/tools/imglab) tool that is included in the dlib 19.7.0 source code. 
+For those who want to visualize the xml files produced by the pipeline, we recommend installing the [`imglab`](https://github.com/davisking/dlib/tree/master/tools/imglab) tool that is included in the `dlib 19.7.0` source code. 
 Please refer to the [`original repository`](https://github.com/davisking/dlib/tree/master/tools/imglab) for installation details and basic usage.
 
 ## Usage
@@ -66,9 +66,9 @@ This command will generate the `train` and `test` folders, as well as the `train
 #### 2) Training and testing object detectors (detector_trainer.py)
 
 In order to train our model to detect fly wings in images, we can use the detector trainer. Several parameters can be given to the trainer:
-```python
+
     python3 detector_trainer.py --help
-```
+    
 ```
 usage: detector_trainer.py [-h] [-d] [-t] [-o] [-n] [-s] [-e] [-c] [-u] [-w]
 
@@ -91,7 +91,7 @@ optional arguments:
 
 In the wing example, we have a very small dataset, so we are running the model trainer with parameters that work reasonably in this context:
 
-    python3 detector_trainer.py --dataset train.xml --test test.xml --n-threads 7 --window-size 79000 --epsilon 0.001 --c-param 15
+    python3 detector_trainer.py -d train.xml -t test.xml -n 7 -w 79000 -e 0.001 -c 15
 
    
 ```
