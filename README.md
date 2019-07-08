@@ -107,7 +107,7 @@ Training using 7 threads.
 Training with sliding window 428 pixels wide by 184 pixels tall.
 ```
     
-These parameters should not be used, in any way, as default training parameters. Exploration of the **ml-morph** parameter space can have a large impact on improving the final performance of the detection algorithm. Also note that testing of the model is performed immediately after training if the `--test` tag is provided, but not otherwise.
+These parameters should not be used, in any way, as default training parameters. Exploration of the **ml-morph** parameter space can have a large impact on improving the final performance of the detection algorithm. Also note that testing of the model is performed immediately after training if the `--test` flag is provided, but not otherwise.
 At the end, you should observe something like this:
 
 ```
@@ -180,7 +180,7 @@ Training with 20 split tests.
 Fitting trees...
 ```
     
-As above, these parameters should not be used, in any way, as default training parameters. Also note that testing of the model is performed immediately after training if the `-t` tag is provided, but not otherwise.
+As above, these parameters should not be used, in any way, as default training parameters. Also note that testing of the model is performed immediately after training if the `-t` flag is provided, but not otherwise.
 At the end, you should observe something like this:
 
 ```
