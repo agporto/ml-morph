@@ -3,6 +3,8 @@ Machine-learning tools for landmark-based morphometrics
 
 Porto & Voje (2019) A fast, accurate and general model for automated landmarking of biological images. Submitted. 
 
+![Alt text](logo.png)
+
 ## Python Dependencies
 
 - numpy>=1.13.3
