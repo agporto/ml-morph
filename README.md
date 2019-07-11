@@ -12,7 +12,7 @@ Porto & Voje (2019) A fast, accurate and general model for automated landmarking
 - dlib>=19.7.0
 - opencv-python>=3.4.0.12
 
-These modules can be installed using:
+If their dependencies are satisfied, these modules can be installed using:
 
     pip install -r requirements.txt
 
