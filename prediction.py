@@ -10,7 +10,7 @@ ap.add_argument('-p','--predictor', type=str, default='predictor.dat', help="tra
 ap.add_argument('-o','--out-file', type=str, default='output.xml', help="output file name (default = output.xml)", metavar='')
 ap.add_argument('-u','--upsample-limit', type=int, default=0, help="upsample limit (default= 0 ; max = 2)", metavar='')
 ap.add_argument('-t','--threshold', type=float, default=0, help="detector's confidence threshold for outputting an object (default= 0)", metavar='')
-ap.add_argument('-l','--ignore-list', type=list, default=None, help=" (optional) prevents landmarks of choice from being output", metavar='')
+ap.add_argument('-l','--ignore-list', nargs='*', type=int, default=None, help=" (optional) prevents landmarks of choice from being output", metavar='')
 
 
 
