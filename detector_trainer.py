@@ -42,11 +42,11 @@ if args['window_size'] is not None:
 #Training the model
 train_path = os.path.join('./', args['dataset'])
 dlib.train_simple_object_detector(train_path, args['out']+".svm", options)
-print("Training accuracy: {}".format(
+print("Training - {}".format(
     dlib.test_simple_object_detector(train_path, args['out']+".svm")))
 
 #Testing the model (if test data was provided)
 if args['test'] is not None:
     test_path = os.path.join('./', args['test'])
-    print("Testing accuracy: {}".format(
+    print("Testing - {}".format(
         dlib.test_simple_object_detector(test_path, args['out']+".svm")))
