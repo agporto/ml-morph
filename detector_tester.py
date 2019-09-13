@@ -17,5 +17,5 @@ args = vars(ap.parse_args())
 
 
 test_path = os.path.join('./', args['test'])
-print("Testing accuracy: {}".format(
+print("Testing - {}".format(
 	dlib.test_simple_object_detector(test_path, args['detector'])))
