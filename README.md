@@ -126,8 +126,8 @@ Training with epsilon: 0.001
 Trained using 7 threads.
 Trained with sliding window 428 pixels wide by 184 pixels tall.
 Saved detector to file detector.svm
-Training accuracy: precision: 1, recall: 1, average precision: 1
-Testing accuracy: precision: 1, recall: 1, average precision: 1
+Training - precision: 1, recall: 1, average precision: 1
+Testing - precision: 1, recall: 1, average precision: 1
 ```
 
 One file is generated during the training process (`detector.svm` or the user-defined name). This file represents the support vector machine (SVM) classifier. With this classifier, one can use **ml-morph** to perform object detection in images of fly wings. 
@@ -136,7 +136,7 @@ If the user wants to test a model that was trained in the past, this can be done
     python3 detector_tester.py -t test.xml -d detector.svm
 
 ```
-Testing accuracy: precision: 1, recall: 1, average precision: 1
+Testing - precision: 1, recall: 1, average precision: 1
 ```
 
 
