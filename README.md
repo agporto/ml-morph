@@ -1,4 +1,5 @@
-# ml-morph
+# ml-morph [![DOI](https://zenodo.org/badge/195575274.svg)](https://zenodo.org/badge/latestdoi/195575274)
+
 Machine-learning tools for landmark-based morphometrics
 
 Porto & Voje (2019) A fast, accurate and general model for automated landmarking of biological images. Submitted. 
