@@ -2,7 +2,7 @@
 
 Machine-learning tools for landmark-based morphometrics
 
-Citation:
+
 Porto, A. and Voje, K.L., 2020. ML‐morph: A fast, accurate and general approach for automated detection and landmarking of biological structures in images. Methods in Ecology and Evolution, 11(4), pp.500-512.
 
 ![Alt text](logo.png)
